@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F4D04E;
+    font-family: "Outfit", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh !important;
+}
+
+.card {
+    width: 384px;
+    height: 522px;
+    padding: 24px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 8px 8px 0px 0px rgb(0, 0, 0);
+    background: #FFFFFF;
+}
+
+.card .main-image {
+    width: 336 px !important;
+    height: 200px;
+}
+
+.card .card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.card-info h4 {
+    padding: 4px 12px 4px 12px;
+    width: 87px;
+    height: 29px;
+    display: inline;
+    border-radius: 4px;
+    background: rgb(244, 207, 77);
+}
+
+.card-info p {
+    color: rgb(17, 17, 17);
+    font-family: Figtree;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.card-info h2 {
+    color: rgb(17, 17, 17);
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.card-info .desc {
+    color: rgb(107, 107, 107);
+    font-family: Figtree;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.author {
+    display: flex;
+    gap: 12px;
+}
+
+.author h4 {
+    align-items: center;
+    color: rgb(17, 17, 17);
+    font-family: Figtree;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 327px;
+        height: 501px;
+    }
+
+    .card .main-image {
+        width: 279px;
+        height: 200px;
+    }
+
+    .card-info h4 {
+        width: 88px;
+        height: 26px;
+    }
+}
